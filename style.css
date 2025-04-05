@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+}
+
+body {
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 40px;
+    overflow: visible;
+}
+
+.intro-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+.strayings {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);  /* Semi-transparent background */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    backdrop-filter: blur(8px);  /* Adds the blur effect for acrylic look */
+    border: 1px solid rgba(255, 255, 255, 0.2);  /* Light border for the acrylic effect */
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);  /* Slightly darker background on hover */
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
